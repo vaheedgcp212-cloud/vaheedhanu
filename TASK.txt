@@ -1,0 +1,74 @@
+
+filename="tata_chroma_devices_ind_date_2025-10-04.csv"
+
+s=filename.split('.')
+s
+['tata_chroma_devices_ind_date_2025-10-04', 'csv']
+s[-1]
+'csv'
+d=s[0].split('_')
+d
+['tata', 'chroma', 'devices', 'ind', 'date', '2025-10-04']
+d[-6]
+'tata'
+d[1]
+'chroma'
+d[0]
+'tata'
+d[date]
+Traceback (most recent call last):
+  File "<pyshell#9>", line 1, in <module>
+    d[date]
+NameError: name 'date' is not defined
+d[-5]
+'chroma'
+d[6]
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    d[6]
+IndexError: list index out of range
+d[4]
+'date'
+d[5]
+'2025-10-04'
+d[-1]
+'2025-10-04'
+==================================================================================================================
+list=[[1,2,3],[4,5,6],[7,8,9]]
+for i in list:
+    for j in i:
+        print(j,end=' ')
+    print(sum(i))
+    print()
+
+    
+1 2 3 6
+
+4 5 6 15
+
+7 8 9 24
+============================================================================================
+for i in list:
+    for j in i:
+        print(j,end=' ')
+    print('sum :',sum(i))
+    print()
+
+    
+1 2 3 sum : 6
+
+4 5 6 sum : 15
+
+7 8 9 sum : 24
+============================================================================
+list=[[1,2,3],[4,5,6],[7,8,9]]
+for i in list:
+    for j in i:
+        print(j,end=' ')
+    print()
+
+    
+1 2 3 
+4 5 6 
+7 8 9 
+==========================================================================
